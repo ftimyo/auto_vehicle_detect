@@ -8,7 +8,7 @@ add_compile_options(-std=c++1y)
 PROJECT(sift)
 # Requires OpenCV
 FIND_PACKAGE( OpenCV 3.1.0 REQUIRED )
-FIND_PACKAGE( Boost 1.60.0 REQUIRED COMPONENTS system thread)
+FIND_PACKAGE( Boost 1.60.0 REQUIRED COMPONENTS system filesystem thread)
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 include_directories(${OpenCV_INCLUDE_DIRS} )
 link_directories(${OpenCV_LIB_DIR})
